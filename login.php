@@ -17,7 +17,7 @@ if($result->num_rows >0) {
     if($row["password"] == $pass) {
         $_SESSION["email"] = $row["email"];
         $_SESSION["name"] = $row["name"];
-		echo "GOOD";
+		header('location: list.php');
     }
     else{
     	echo "<br><p align='center'>Incorrect Password!!! :(</p><br>";
