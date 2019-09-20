@@ -10,12 +10,12 @@ if($conn->connect_error) {
 } 
 $uname=$_POST["username"];
 $pass=$_POST["password"];
-$sql = "SELECT userid, name, password FROM userinfo where userid = '".$uname."';";
+$sql = "SELECT  name,email,password FROM userdetails where email = '".$uname."';";
 $result = $conn->query($sql);
 if($result->num_rows >0) {
     $row = $result->fetch_assoc();
     if($row["password"] == $pass) {
-        $_SESSION["userid"] = $row["userid"];
+        $_SESSION["email"] = $row["email"];
         $_SESSION["name"] = $row["name"];
 		echo "GOOD";
     }
