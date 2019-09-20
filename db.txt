@@ -1,0 +1,19 @@
+CREATE TABLE `userdetails` (
+	`name` VARCHAR(60) NOT NULL,
+	`gender` VARCHAR(6) NOT NULL,
+	`address` VARCHAR(200) NOT NULL,
+	`contact` VARCHAR(10) NOT NULL,
+	`email` VARCHAR(50) NOT NULL,
+	`password` VARCHAR(20) NOT NULL
+);
+
+
+
+CREATE TABLE `eventdetails` (
+	`oname` VARCHAR(20) NOT NULL,
+	`ename` VARCHAR(50) NOT NULL,
+	`date` VARCHAR(11) NOT NULL,
+	`address` VARCHAR(200) NOT NULL,
+	`contact` VARCHAR(10) NOT NULL,
+	`email` VARCHAR(50) NOT NULL
+);
